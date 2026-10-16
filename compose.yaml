@@ -1,0 +1,8 @@
+services:
+  web:
+    build: .
+    image: relive-gpt-web:1.0
+    container_name: relive-gpt-web
+    restart: unless-stopped
+    ports:
+      - "8090:80"
