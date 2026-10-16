@@ -6,7 +6,7 @@
 
 這是一個純前端應用，不需註冊帳號或部署後端資料庫。GPX 在瀏覽器內解析，旅程保存在目前瀏覽器的 IndexedDB。
 
-- 原始碼：[umastan/relive-gpt](https://github.com/umastan/relive-gpt)
+- 原始碼：[stanf1/relive-gpt](https://github.com/stanf1/relive-gpt)
 - Docker 映像：[stanf1/relive-gpt](https://hub.docker.com/r/stanf1/relive-gpt)
 
 ## 功能
@@ -46,7 +46,7 @@ docker run -d \
 需安裝 Git、Docker 與 Docker Compose。
 
 ```bash
-git clone https://github.com/umastan/relive-gpt.git
+git clone https://github.com/stanf1/relive-gpt.git
 cd relive-gpt
 docker compose up -d --build
 ```
@@ -70,7 +70,7 @@ Dockerfile 使用 Node.js 建置前端，再以 Nginx 提供 `dist/` 靜態檔�
 建議使用 **Node.js 22** 與 npm，與 Docker 建置環境一致。
 
 ```bash
-git clone https://github.com/umastan/relive-gpt.git
+git clone https://github.com/stanf1/relive-gpt.git
 cd relive-gpt
 npm ci
 npm run dev
